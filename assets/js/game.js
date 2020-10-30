@@ -10,7 +10,7 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 //log shorthand = console.log(playerName, playerAttack, playerHealth)
-var enemyNames = ["Roborto", "Amy Andriod", "Robo Trumble"]; //this is an array
+var enemyNames = ["Roborto", "Amy Andriod", "Robo Trumble"]; //this is an array.
 randomNumber = function (min, max) {
     var value = Math.floor(Math.random() * (max - min + 1) + min);
     return value;
