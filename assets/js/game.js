@@ -84,6 +84,7 @@ var fightOrSkip = function() {
         return fightOrSkip();
     }
     // if player picks "skip" confirm and then stop the loop
+    promptFight = promptFight.toLowerCase();
     if (promptFight === "skip") {
       // confirm player wants to skip
       var confirmSkip = window.confirm("Are you sure you'd like to quit?");
@@ -93,11 +94,12 @@ var fightOrSkip = function() {
         window.alert(playerInfo.name + " has decided to skip this fight. Goodbye!");
         // subtract money from playerMoney for skipping
         playerInfo.playerMoney = playerInfo.money - 10;
+        
         shop();
         return true;
       }
     }
-  };
+  }; 
 
 var fight = function (enemy) {
     // repeat and execute as along as enemy robot is alive
